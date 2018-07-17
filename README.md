@@ -10,7 +10,7 @@ This Redux helper helps with this.
 
 ## Usage
 
-(coming soon)
+See the [demo repo](https://github.com/bitflower/stencil-redux-reducer-registry).
 
 ## Credits
 
