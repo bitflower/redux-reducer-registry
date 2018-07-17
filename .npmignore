@@ -1,0 +1,12 @@
+# Configs
+tsconfig.json
+jest.config.js
+
+# Tests
+*.test.js
+
+# Typescript source
+src
+
+# Others
+LEARNINGS.md
