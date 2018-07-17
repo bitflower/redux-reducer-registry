@@ -8,7 +8,7 @@
  *
  * @export
  */
-class ReducerRegistry {
+export class ReducerRegistry {
     private _emitChange: Function;
     private _reducers: any;
 

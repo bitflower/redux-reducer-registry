@@ -1,10 +1,14 @@
 {
-  "name": "@case-os/feathers",
-  "version": "0.0.33",
-  "description": "CaseOS plugin for FeathersJS",
-  "homepage": "https://github.com/bitflower/caseos-feathers#readme",
+  "name": "redux-reducer-registry",
+  "version": "0.0.1",
+  "description": "Dynamic Redux registry tool for lazy loading reducers written in Typescript",
+  "homepage": "https://github.com/bitflower/redux-reducer-registry#readme",
   "keywords": [
-    "demo",
+    "redux",
+    "reducer",
+    "dynamic",
+    "lazy",
+    "loading",
     "typescript"
   ],
   "author": {
@@ -13,17 +17,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bitflower/caseos-feathers.git"
+    "url": "git+https://github.com/bitflower/redux-reducer-registry.git"
   },
   "bugs": {
-    "url": "https://github.com/bitflower/caseos-feathers/issues"
+    "url": "https://github.com/bitflower/redux-reducer-registry/issues"
   },
   "directories": {
     "lib": "src",
     "test": "test/"
   },
   "main": "commonjs/index.js",
-  "module_ACTIVATE_LATER": "esm/index.js",
+  "module": "esm/index.js",
   "types": "esm/index.d.ts",
   "scripts": {
     "build": "rm -rf commonjs/ && rm -rf esm/ && tsc && npx babel esm --out-dir commonjs",
@@ -31,37 +35,14 @@
     "release": "npm run build && np"
   },
   "dependencies": {
-    "@case-os/commons": "0.0.6",
-    "@case-os/repository": "0.0.17",
-    "@feathersjs/authentication": "^2.1.5",
-    "@feathersjs/authentication-local": "^1.2.1",
-    "@feathersjs/commons": "^1.4.0",
-    "debug": "^3.1.0",
-    "feathers-authentication-management": "^2.0.0",
-    "feathers-hooks-common": "^4.11.1",
-    "feathers-mailer": "^3.0.0",
-    "feathers-mongoose": "^6.1.1",
-    "mongoose": "^5.1.1",
-    "nodemailer-smtp-transport": "^2.7.4",
-    "request": "^2.87.0",
-    "request-promise": "^4.2.2",
-    "ws": "^5.2.1"
+    "redux": "^3.7.2"
   },
   "devDependencies": {
-    "@types/debug": "0.0.30",
-    "@types/express": "^4.11.1",
-    "@types/feathersjs__feathers": "^3.0.3",
-    "@types/jest": "^22.2.3",
-    "@types/mongoose": "^5.0.14",
-    "@types/node": "^10.0.3",
-    "@types/nodemailer-smtp-transport": "^2.7.4",
-    "@types/ws": "^5.1.2",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-es2015-modules-simple-commonjs": "^0.3.0",
-    "jest": "^22.4.3",
+    "tslint": "^5.11.0",
     "prettier": "^1.12.1",
-    "ts-node": "^6.0.2",
-    "tslint": "^5.10.0"
+    "ts-node": "^6.0.2"
   },
   "publishConfig": {
     "access": "public"
